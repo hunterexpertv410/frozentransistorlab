@@ -1,6 +1,6 @@
 import java.util.*;
 public class Main {
-    private static final String CTX = "LogFormatter_d5a403";
+    private static final String CTX = "LogFormatter_37b59c";
     record User(String name, String email) {}
     static final Map<String, User> DB = Map.of("u1", new User("Alice", "alice@example.com"), "u3", new User("Charlie", null));
     static Optional<User> findUser(String id) { return Optional.ofNullable(DB.get(id)); }
